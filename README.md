@@ -11,9 +11,9 @@ This tool was heavily influenced by [dumpmon](http://www.github.com/jordan-wrigh
 
 ## Changes made
 * updated tool to use Python3 since Python2 will be deprecated in 2020
-    *changing print statements
-    *updated modified Queue library
-    *added line to __init__.py to allow fix relative imports.
+    * changing print statements
+    * updated modified Queue library
+    * added line to __init__.py to allow fix relative imports.
 * removed slexy/pastie sites because they are no longer active
 * removed all twitter componenents, this is not a feature we needed or will use
     * changed references to 'tweet' since we aren't tweeting

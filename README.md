@@ -1,7 +1,7 @@
 # pastebin_scraper
 ## Automated tool to monitor pastebin for interesting information
-## Originally created by Jordan Wright
-## Modified by Moez Janmohammad [@wedemmoez](http://www.twitter.com/wedemmoez)
+### Originally created by Jordan Wright
+### Modified by Moez Janmohammad [@wedemmoez](http://www.twitter.com/wedemmoez)
 
 
 For more overview, check out the blog post [here.](???)

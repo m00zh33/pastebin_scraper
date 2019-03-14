@@ -6,6 +6,7 @@
 # Description: This tool monitors Pastebin in real time for data leakage
 ###############################################################################################################
 
+from lib.Pastebin import Pastebin, PastebinPaste
 from time import sleep
 from settings import log_file, PRINT_LOG
 import threading

@@ -1,6 +1,5 @@
 import requests
-import settings
-from time import sleep, strftime
+from time import sleep
 import logging
 
 r = requests.Session()

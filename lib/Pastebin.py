@@ -28,6 +28,7 @@ class Pastebin(Site):
         self.session = requests.Session()
         super(Pastebin, self).__init__()
 
+
     def update(self):
         '''update(self) - Fill Queue with new Pastebin IDs'''
         logging.info('Retrieving Pastebin ID\'s')
@@ -60,5 +61,7 @@ class Pastebin(Site):
         for entry in new_pastes[::-1]:
             logging.info('Adding URL: ' + entry.url)
             self.put(entry)
+
+
     def get_paste_text(self, paste):
         return helper.download(paste.url)

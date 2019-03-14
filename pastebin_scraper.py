@@ -6,9 +6,6 @@
 # Description: This tool monitors Pastebin in real time for data leakage
 ###############################################################################################################
 
-
-from lib.regexes import regexes
-from lib.Pastebin import Pastebin, PastebinPaste
 from time import sleep
 from settings import log_file, PRINT_LOG
 import threading
@@ -33,7 +30,7 @@ def monitor():
     handlers = [file_handler]
     if PRINT_LOG:
         stdout_handler = logging.StreamHandler(sys.stdout)
-        handlers.append(stdout_handler)    
+        handlers.append(stdout_handler)
     logging.basicConfig(
         level=level,
         format='%(asctime)s [%(levelname)s] %(message)s',

@@ -1,7 +1,5 @@
 from queue import Queue
-import requests
 import time
-import re
 from settings import USE_DB, DB_HOST, DB_PORT, DB_DB, DB_PASS, DB_USER
 import logging
 from . import helper
@@ -34,9 +32,8 @@ class Site(object):
             self.queue = []
         if USE_DB:
             #update DB to mysql\
-            self.db_client = pymysql.connect(host = DB_HOST, user = DB_USER, password = DB_PASS, db = DB_DB, charset = 'utf8mb4', cursorclass = pymysql.cursors.DictCursor, autocommit = True)
+            self.db_client = pymysql.connect(host = DB_HOST, port = DB_PORT, user = DB_USER, password = DB_PASS, db = DB_DB, charset = 'utf8mb4', cursorclass = pymysql.cursors.DictCursor, autocommit = True)
             
-
 
     def empty(self):
         return len(self.queue) == 0

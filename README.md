@@ -4,7 +4,7 @@
 ### Modified by Moez Janmohammad [@wedemmoez](http://www.twitter.com/wedemmoez)
 
 
-For more overview, check out the blog post [here.](???)
+For more overview, check out the blog post [here.](https://www.criticalstart.com/2019/03/automated-tool-to-monitor-pastebin-for-interesting-information/)
 
 This tool was heavily influenced by [dumpmon](http://www.github.com/jordan-wright/dumpmon). Since that bot is no longer active (as of October 7, 2018), Critical Start - Section 8 has set up our own to continue to monitor Pastebin for data leaks and dumps. In modifying dumpmon, we've also made changes and added features, lsited below. 
 
